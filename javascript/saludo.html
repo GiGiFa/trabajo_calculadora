@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Primer ejemplo con JavaScript</title>
+</head>
+
+<style>
+    body{
+        background-color: rgb(255, 145, 0);
+    }
+</style>
+
+<body>
+    <input type="number" id="number1">
+    <input type="number" id="number2">
+    <input type="number" id="resultado">
+    <button type="button" onclick="calcular()">sumar</button>
+
+</body>
+</html>
+
+<script>
+    /*alert("Hola programa de moviles")
+    console.log("Hola desde la consola")
+    document.write("Hola en navegador ")
+
+    var a=10
+    let b=20
+    const PI=3.1416
+    let res=a+b*PI
+    document.write(typeof(a))
+    document.write(" "+res)
+    res++
+    let res2=res++
+    document.write(" "+res2)
+
+    saludo()
+
+    let x=1
+
+    function saludo(){
+        document.getElementById("saludo").value="hola perros."
+    }*/
+
+    function calcular(){
+        let d1= document.getElementById("number1").value
+        let d2= document.getElementById("number2").value
+        let result= parseInt(d1)+parseInt(d2)
+        document.getElementById("resultado").value=result
+    }
+
+
+</script>
